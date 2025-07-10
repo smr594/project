@@ -1,0 +1,654 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Top Green Strip */
+.top-strip {
+  height: 35px;
+  background-color: #96c24e;
+}
+
+/* Header */
+header {
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition: 0.3s ease;
+  gap: 10px;
+  padding-right: 25px;
+}
+
+nav a.active {
+  color: #f48524;
+}
+
+.order-button {
+  background-color: #f48524;
+  color: white;
+  padding: 10px 25px;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.bg  {
+background-image: url(./image/first\ page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    content:"";
+    contain: "";
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    color:yellowgreen;
+}
+.hero-text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.welcome {
+  font-size: 80px;
+  font-weight: bold;
+  color: orange;
+  margin: 0;
+}
+.order-btn{
+  
+  padding: 10px 25px;
+  color:#000;
+  background-color: #f48524;
+  
+  
+}
+.order-btn:hover{
+  background-color: #7CB342;
+  border:none;
+}
+
+.to {
+  font-size: 80px;
+  color:orange;
+  margin: 10px;
+}
+
+.plateful {
+  font-size: 80px;
+  font-weight: bold;
+  color: orange;
+  margin: 20px;
+}
+
+
+
+.hero-text p {
+  font-size: 22px;
+  font-style: italic;
+  color: green;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-text .highlight {
+  color: orange;
+}
+
+/* .order-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  font-weight: bold;
+  border-radius: 4px;
+} */
+
+
+
+
+title {
+font-size: 55px;
+font-weight: 800px;
+width: 35%;
+text-align: center;
+font-style: italic;
+font-family: "DM Serif Display",serif;
+color: black;
+
+
+}
+.title span {
+    color: orange;
+    font-style:italic;
+
+}
+  
+  
+
+
+
+.text h2{
+   align-items:center;
+   justify-content: center;
+   color: #f48524;
+   display: flex;
+}
+.text p{
+  margin-top: 30px;
+  font-size: 17px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+}
+.para p{
+margin-top: 30px;
+  font-size: 17px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+
+}
+
+ 
+.heading h2{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  line-height: 3;
+  font-size: 30px;
+  margin: 10;
+  padding: 0;
+
+
+}
+.items-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 10;
+  padding: 0;
+  
+}
+
+.item-card {
+  width: 200px;
+  text-align: center;
+  position: relative;
+
+}
+
+.image-container {
+  position: relative;
+ 
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  height: 200px;
+  overflow: clip;
+}
+
+.add-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bold;
+  border-radius: 5%;
+  padding: 5px 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.rating {
+  color: orange;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/* Top Menu Selector Section */
+.top-menu-selector {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* White background for this section */
+}
+
+.main-heading {
+    font-family: 'Bebas Neue', sans-serif; /* Bold, condensed font */
+    font-size: 3em;
+    font-weight: 700;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    gap: 15px; /* Space between buttons */
+}
+
+.category-btn {
+    background-color: #8BC34A; /* Green color from image */
+    color: #333; /* Dark text */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    text-transform: capitalize; /* Matches image's capitalization */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.category-btn:hover {
+    background-color: #7CB342; /* Slightly darker green on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Lift effect on hover */
+}
+
+/* Active button state added for JS */
+.category-btn.active {
+    background-color: #5cb85c; /* A darker, more prominent green for active state */
+    color: white; /* White text for active button */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Stronger shadow for active */
+}
+
+
+
+/* Daily Meal Section */
+.daily-meal-section {
+    position: relative;
+    background-image: url(./image/home\ ko\ veg.jpg); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px; /* Ample padding to create vertical space */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    width: 100%; /* Allow it to take full width of its container */
+    max-width: 1200px; /* Or whatever maximum width you want for the section */
+}
+
+/* Optional: Overlay for background image if text needs more contrast */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    /* backdrop-filter: blur(3px); /* Optional blur effect */
+    /* -webkit-backdrop-filter: blur(3px); */
+    z-index: 1; /* Ensure it's below text content */
+}
+
+.daily-meal-section .section-title {
+    font-family: 'Bebas Neue', sans-serif; /* Font similar to image */
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    z-index: 2; /* Ensure title is above overlay */
+    position: relative; /* To enable z-index */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.meal-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Space between meal items */
+    width: 100%;
+    max-width: 800px; /* Max width for the meal list */
+    margin: 0 auto;
+    z-index: 2; /* Ensure list is above overlay */
+    position: relative; /* To enable z-index */
+}
+
+.meal-item {
+    display: flex;
+    align-items: stretch; /* Stretch items to fill height */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures inner elements respect border-radius */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.day-button {
+    background-color: #F89406; /* Orange color */
+    color: white;
+    padding: 15px 50px;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    flex-shrink: 0; /* Prevent from shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    min-width: 220px; /* Fixed width for consistent button size */
+}
+
+.meal-description {
+    background-color: #e0e0e0; /* Light grey for the description field */
+    color: #333;
+    padding: 12px 15px;
+    font-size: 1em;
+    text-align: left;
+    flex-grow: 1; /* Allow description to take available space */
+    display: flex;
+    align-items: center; /* Vertically center text */
+}
+
+.meal-price {
+    background-color: #8BC34A; /* Green color for price box */
+    color: #333;
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+    flex-shrink: 0; /* Prevent from shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-width: 60px; /* Fixed width for consistent price box size */
+}
+
+/* Weekly/Monthly Prices Section */
+.weekly-monthly-prices {
+    width: 100%;
+    max-width: 700px; /* Slightly narrower than meal list for visual hierarchy */
+    margin-top: 50px; /* Space above these prices */
+    padding: 20px 0;
+    z-index: 2; /* Above overlay */
+    position: relative; /* Above overlay */
+    text-align: left;
+    color: #333; /* Dark text on light background */
+}
+
+.price-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* Align text baselines */
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.price-label {
+    font-weight: 700;
+    flex-shrink: 0; /* Prevent label from shrinking */
+    padding-right: 10px; /* Space before dots */
+}
+
+.price-dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #777; /* Dotted line */
+    margin: 0 5px; /* Space around dots */
+    min-width: 20px; /* Ensure dots are visible even if content is short */
+}
+
+.price-value {
+    font-weight: 700;
+    flex-shrink: 0; /* Prevent value from shrinking */
+    padding-left: 10px; /* Space after dots */
+}
+
+
+/* Basic Reset & Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Default clean font for most text */
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background for the top section */
+    color: #000; /* Default text color */
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Top Section (Food Reviews) */
+.top-section {
+    text-align: center;
+    padding: 80px 20px 100px; /* Ample padding to match image spacing */
+    max-width: 900px; /* Limit content width */
+    margin: 0 auto; /* Center the content */
+}
+
+.reviews-main-title {
+    font-family: 'Bebas Neue', sans-serif; /* Bold, condensed font */
+    font-size: 3em; /* Large size */
+    font-weight: 700;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.review-paragraph {
+    font-family: 'Open Sans', sans-serif; /* Text for the review */
+    font-size: 1.2em; /* Readable size */
+    font-weight: 400; /* Regular weight */
+    color: #333;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 750px; /* Controls line length */
+}
+
+.review-paragraph .highlight {
+    font-weight: 700; /* Bold specific words as in the image */
+}
+
+/* Footer Section */
+.main-footer {
+    background-color: #8BC34A; /* Green background color from image */
+    color: #333; /* Dark text for contrast on green */
+    padding: 40px 20px 20px; /* Top, horizontal, bottom padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    max-width: 1000px; /* Max width for footer content */
+    margin-bottom: 30px; /* Space above bottom text */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between flex items */
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    flex: 1; /* Allows this section to grow */
+    min-width: 300px; /* Ensure it doesn't get too small */
+}
+
+.subscribe-form {
+    margin-bottom: 25px; /* Space between form and logo */
+}
+
+.subscribe-form label {
+    font-size: 1.1em;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.email-input-wrapper {
+    background-color: #E0E0E0; /* Light grey background for the wrapper */
+    border-radius: 5px;
+    padding: 5px; /* Inner padding to simulate border */
+    display: inline-block; /* Makes wrapper size to content */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+.email-input-wrapper input[type="email"] {
+    border: none;
+    background: none; /* No background for the input itself */
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #333;
+    width: 250px; /* Fixed width for the input field */
+    outline: none; /* Remove outline on focus */
+}
+
+.email-input-wrapper input[type="email"]::placeholder {
+    color: #777; /* Placeholder color */
+}
+
+.footer-logo img {
+    width: 100px; /* Size of the logo */
+    height: auto;
+    display: block;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align content to the right */
+    flex: 1; /* Allows this section to grow */
+    min-width: 300px; /* Ensure it doesn't get too small */
+}
+
+.social-icons {
+    margin-bottom: 25px; /* Space between icons and links */
+    display: flex;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #333; /* Dark color for icons */
+    font-size: 1.8em; /* Size of icons */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white; /* Darker on hover */
+}
+
+.subscribe-links h4 {
+    font-family: 'Roboto', sans-serif; /* Or similar sans-serif */
+    font-size: 1.1em;
+    font-weight: 700;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subscribe-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display links in a row */
+    gap: 20px; /* Space between links */
+}
+
+.subscribe-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.subscribe-links ul li a:hover {
+    color: white;
+}
+
+.footer-bottom-text {
+    width: 100%;
+    max-width: 1000px; /* Match width of top footer content */
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Subtle separator line */
+    padding-top: 20px;
+    text-align: center; /* Center the text */
+}
+.footer-logo img{
+  width: 100px;
+  border-radius: 50px;
+}
+.footer-bottom-text p {
+    font-family: 'Open Sans', sans-serif; /* Looks like a standard sans-serif, slightly italic */
+    font-size: 0.95em;
+    color:white;
+    font-style: italic; /* Apply italic style */
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-bottom-text .phone-number {
+    font-weight: 700; /* Make phone number bold */
+    font-style: normal; /* Remove italic for number if desired */
+}
+
+

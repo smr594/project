@@ -1,0 +1,176 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif; /* Default readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light grey background for the overall page, if not covered by the section */
+    color: #333;
+    line-height: 1.6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+/* Dessert Section Container */
+.dessert-section {
+    position: relative;
+    background-image: url('./image/desert.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px; /* Ample padding to create vertical space */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    width: 100%; /* Take full width of its container */
+    max-width: 1000px; /* Adjust based on the image's effective width */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    /* Add any border if seen in the full page context, e.g., border: 5px solid #007bff; */
+}
+
+/* Optional: Overlay for background image if text needs more contrast */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white overlay */
+    /* backdrop-filter: blur(3px); /* Optional blur effect */
+    /* -webkit-backdrop-filter: blur(3px); */
+    z-index: 1; /* Ensure it's below text content */
+}
+
+/* Section Title "Daily Dessert items" */
+.section-title {
+    font-family: 'Bebas Neue', sans-serif; /* Font similar to image */
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    z-index: 2; /* Ensure title is above overlay */
+    position: relative; /* To enable z-index */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Meal List Container */
+.meal-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Space between meal items */
+    width: 100%;
+    max-width: 800px; /* Max width for the meal list */
+    margin: 0 auto;
+    z-index: 2; /* Ensure list is above overlay */
+    position: relative; /* To enable z-index */
+}
+
+/* Individual Meal Item Styling (reused from previous menu sections) */
+.meal-item {
+    display: flex;
+    align-items: stretch; /* Stretch items to fill height */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures inner elements respect border-radius */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.day-button {
+    background-color: #F89406; /* Orange color from image */
+    color: white;
+    padding: 12px 18px;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    flex-shrink: 0; /* Prevent from shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    min-width: 100px; /* Fixed width for consistent button size */
+}
+
+.meal-description {
+    background-color: #e0e0e0; /* Light grey for the description field */
+    color: #333;
+    padding: 12px 15px;
+    font-size: 1em;
+    text-align: left;
+    flex-grow: 1; /* Allow description to take available space */
+    display: flex;
+    align-items: center; /* Vertically center text */
+}
+
+.meal-price {
+    background-color: #8BC34A; /* Green color for price box */
+    color: #333;
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+    flex-shrink: 0; /* Prevent from shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-width: 60px; /* Fixed width for consistent price box size */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+    .dessert-section {
+        padding: 60px 15px;
+    }
+    .meal-list-container {
+        max-width: 95%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 650px) {
+    .section-title {
+        font-size: 1.8em;
+    }
+    .meal-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: stretch; /* Stretch to fill width */
+    }
+    .day-button, .meal-description, .meal-price {
+        border-radius: 0; /* Reset specific corner radii when stacked */
+        width: 100%; /* Make them full width */
+        box-sizing: border-box;
+        text-align: center; /* Center text for stacked elements */
+        min-width: auto; /* Remove fixed min-width */
+    }
+    .day-button {
+        border-top-left-radius: 8px; /* Top corners rounded */
+        border-top-right-radius: 8px;
+        padding: 10px;
+    }
+    .meal-price {
+        border-bottom-left-radius: 8px; /* Bottom corners rounded */
+        border-bottom-right-radius: 8px;
+        padding: 10px;
+    }
+    .meal-description {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5em;
+        padding: 8px 15px;
+    }
+    .day-button, .meal-description, .meal-price {
+        font-size: 0.9em;
+    }
+}

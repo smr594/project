@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000; /* Black background matching the image */
+    color: #fff; /* White text for contrast */
+}
+
+/* Top Section Styling */
+.whatsapp-section-top {
+    flex-grow: 1; /* Allows this section to take available space */
+    background-color: #fff; /* White background for the top part */
+    color: #333; /* Darker text for readability on white background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.chat-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.continue-chat-btn {
+    display: inline-block;
+    background-color: #8BC34A; /* Green color similar to image */
+    color: #333; /* Black text for the button */
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.continue-chat-btn:hover {
+    background-color: #7CB342; /* Slightly darker green on hover */
+}
+
+.no-whatsapp-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.download-link {
+    color: #8BC34A; /* Green color for the download link */
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.download-link:hover {
+    color: #7CB342; /* Slightly darker green on hover */
+}
+
+/* Bottom Section Styling */
+.whatsapp-section-bottom {
+    background-color: #8BC34A; /* Green color for the bottom part */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: #333; /* Dark text on green background */
+}
+
+.whatsapp-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.whatsapp-icon {
+    font-size: 2.5em; /* Larger icon */
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #F57C00; /* Orange color for the download button */
+    color: #fff; /* White text for the button */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: orange; /* Slightly darker orange on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .whatsapp-section-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .whatsapp-info {
+        flex-direction: column;
+    }
+
+    .download-button {
+        width: 80%; /* Make button wider on small screens */
+        text-align: center;
+    }
+}
