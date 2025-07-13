@@ -1,13 +1,103 @@
+
+body {
+  padding-top: 100px; 
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  color: #000;
+* Top green stripe above navbar */
+.top-strip {
+  width: 100%;
+  height: 35px;
+  background: #8BC34A; /* or your preferred green */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
 }
+
+.fixed-navbar {
+  top: 18px;
+}
+
+.navbar-spacer {
+  height: 118px; /* 18px for top-strip + 100px for navbar */
+}
+/* Spacer for fixed navbar */
+.navbar-spacer {
+  height: 100px; /* Match the height of your navbar */
+  width: 100%;
+}
+/* Fixed navbar styles */
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+
+
+
+
+header {
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50px;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  
+
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition: 0.3s ease;
+  gap: 10px;
+  padding-right: 25px;
+  
+
+
+}
+
+nav a.active {
+  color: #f48524;
+}
+
+.order-button {
+  background-color: #f48524;
+  color: white;
+  padding: 10px 25px;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  
+}
+
+
 
 .about-section {
   width: 100%;
@@ -59,6 +149,7 @@ body {
     color: #000; /* Black color as in the image */
     margin-bottom: 50px; /* Space below the title */
     letter-spacing: 2px; /* Slightly spread out letters */
+    color: #8BC34A;
 }
 
 .cards-container {
@@ -80,6 +171,7 @@ body {
     max-width: 45%; /* Max width to allow two cards per row */
     text-align: left; /* Text aligned left within cards */
     box-sizing: border-box;
+    
 }
 
 .card h3 {
@@ -89,6 +181,7 @@ body {
     color: #333;
     margin-top: 0;
     margin-bottom: 10px;
+    color: #8BC34A;
 }
 
 .card p {
@@ -138,18 +231,18 @@ body {
 }
 
 .text-block {
-    margin-bottom: 25px; /* Space between mission and vision blocks */
+    margin-bottom: 25px; 
     text-align: left;
 }
 
 .text-block h4 {
-    font-family: 'Roboto', sans-serif; /* Or another clean serif/sans-serif if different */
+    font-family: 'Roboto', sans-serif; 
     font-size: 1.4em;
     font-weight: 700; /* Bold as in image */
     margin-top: 0;
     margin-bottom: 5px;
     color:black; /* blacktext */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Subtle shadow for readability */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .text-block p {
@@ -195,19 +288,19 @@ body {
 }
 
 
-/* Top Section (Food Reviews) */
+
 .top-section {
     text-align: center;
-    padding: 80px 20px 100px; /* Ample padding to match image spacing */
-    max-width: 900px; /* Limit content width */
-    margin: 0 auto; /* Center the content */
+    padding: 80px 20px 100px;
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
 .reviews-main-title {
-    font-family: 'Bebas Neue', sans-serif; /* Bold, condensed font */
-    font-size: 3em; /* Large size */
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 3em; 
     font-weight: 700;
-    color: #000;
+    color: orange;
     margin-top: 0;
     margin-bottom: 30px;
     letter-spacing: 2px;
@@ -215,10 +308,10 @@ body {
 }
 
 .review-paragraph {
-    font-family: 'Open Sans', sans-serif; /* Text for the review */
-    font-size: 1.2em; /* Readable size */
+    font-family: 'Open Sans', sans-serif; 
+    font-size:20px; 
     font-weight: 400; /* Regular weight */
-    color: #333;
+    color: black;
     line-height: 1.5;
     margin: 0 auto;
     max-width: 750px; /* Controls line length */

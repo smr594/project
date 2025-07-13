@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "orderbt.js",
+  "scripts": {
+    "start": "node orderbt.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smr594/project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smr594/project/issues"
+  },
+  "homepage": "https://github.com/smr594/project#readme",
+  "description": ""
+}

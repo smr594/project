@@ -5,16 +5,22 @@
   <title>Plateful</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
+
   <div class="top-strip"></div>
-  <header>
+  <div class="navbar-spacer"></div>
+  <header class="fixed-navbar">
+    <div class="back-bt">
+        <i class="fa-solid fa-arrow-left-long"></i>
     <div class="logo">
       <img src="./image/logo.png" alt="Plateful Logo">
 
     </div>
-    
+    </div>
     <nav>
       <ul>
         <li><a href="#" class="active">HOME</a></li>
@@ -34,7 +40,7 @@
   <h1 class="plateful">PLATEFUL</h1>
 
 
-  <p><em>"plateful of <span class="highlight">home</span> in every <span class="highlight">bite</span>."</em></p>
+  <p><em>"Plateful of <span class="highlight">home</span> in every <span class="highlight">bite</span>."</em></p>
  <br> <br> <li><a href="./orderbt.html" class="order-btn"> ORDER NOW</a></li>
 </div>
 </div>
@@ -55,72 +61,158 @@
   <div class="heading">
     <h2> OUR ITEMS</h2>
   </div>
+  <header>
+        
+        <div class="cart-info">
+            Cart: <span id="cart-item-count">0</span> items
+            <button id="view-cart-btn">View Cart</button>
+        </div>
+    </header>
 
-  <div class="items-container">
-    <!-- Item 1 -->
-    <div class="item-card">
-      <div class="image-container">
-        <img src="./image/thakali khana.webp" alt="Thakali Set">
-        <span class="add-icon">+</span>
-      </div>
-      <div class="info">
-        <div class="rating">★★★★★</div>
-        <div class="price">Rs.250/-</div>
-        <div class="title">Thakali set</div>
-      </div>
-    </div>
-    <!-- Item 2 -->
-    <div class="item-card">
-      <div class="image-container">
-        <img src="./image/aloo-paratha-on-transparent-background-png (1).webp" alt="Aloo Paratha">
-        <span class="add-icon">+</span>
-      </div>
-      <div class="info">
-        <div class="rating">★★★★☆</div>
-        <div class="price">Rs.70/-</div>
-        <div class="title">Aloo Paratha</div>
-      </div>
+    <main>
+        <section class="menu-slider-section">
+            <h2>Popular Dishes</h2>
+            <div class="slider-wrapper">
+                <button class="nav-btn prev-btn">&lt;</button>
+                <div class="slider-container" id="menuSlider">
+                    <div class="item-card">
+                        <div class="image-container">
+                            <img src="./image/Puri-sabji.png" alt="Puri Sabji">
+                            <span class="add-icon" data-item-id="puri-sabji-1">+</span>
+                        </div>
+                        <div class="info">
+                            <div class="rating">★★★★☆</div>
+                            <div class="price" data-price="80">Rs.80/-</div>
+                            <div class="title">Puri Tarkari</div>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="image-container">
+                            <img src="./image/chicken momo.jpg" alt="MO:MO">
+                            <span class="add-icon" data-item-id="MO:MO">+</span>
+                        </div>
+                        <div class="info">
+                            <div class="rating">★★★★★</div>
+                            <div class="price" data-price="120">Rs.120/-</div>
+                            <div class="title">MO:MO</div>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="image-container">
+                            <img src="./image/chowmein (1).png" alt="Chowmein">
+                            <span class="add-icon" data-item-id="Chowmein">+</span>
+                        </div>
+                        <div class="info">
+                            <div class="rating">★★★☆☆</div>
+                            <div class="price" data-price="60">Rs.60/-</div>
+                            <div class="title">Chowmein</div>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="image-container">
+                            <img src="./image/thakali khana.webp" alt="Thakali set">
+                            <span class="add-icon" data-item-id="Thakali Set">+</span>
+                        </div>
+                        <div class="info">
+                            <div class="rating">★★★★☆</div>
+                            <div class="price" data-price="200">Rs.200/-</div>
+                            <div class="title">Thakali Set</div>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="image-container">
+                            <img src="./image/khaja-set (1) (1).png" alt="Khaja set">
+                            <span class="add-icon" data-item-id="khaja set">+</span>
+                        </div>
+                        <div class="info">
+                            <div class="rating">★★★★☆</div>
+                            <div class="price" data-price="170">Rs.170/-</div>
+                            <div class="title">Khaja set</div>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <div class="image-container">
+                            <img src="./image/rasberry (1).png" alt="gulab jamun">
+                            <span class="add-icon" data-item-id="gulabjamun">+</span>
+                        </div>
+                        <div class="info">
+                            <div class="rating">★★★★☆</div>
+                            <div class="price" data-price="40">Rs.40/-</div>
+                            <div class="title">Gulabjamun</div>
+                        </div>
+                    </div>
+                       
+                            <div class="item-card">
+                                <div class="image-container">
+                                    <img src="./image/chukani.jpg"alt="chukauni">
+                                    <span class="add-icon" data-item-id="Chukauni">+</span>
+                                </div>
+                                <div class="info">
+                                    <div class="rating">★★★★☆</div>
+                                    <div class="price" data-price="80">Rs.80/-</div>
+                                    <div class="title">Chukauni</div>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="image-container">
+                                    <img src="./image/sel-roti.jpeg"alt="selroti">
+                                    <span class="add-icon" data-item-id="Selroti">+</span>
+                                </div>
+                                <div class="info">
+                                    <div class="rating">★★★★☆</div>
+                                    <div class="price" data-price="20">Rs.20/-</div>
+                                    <div class="title">Selroti</div>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="image-container">
+                                    <img src="./image/alo parautha.webp"alt="Alu parautha">
+                                    <span class="add-icon" data-item-id="Alu parautha">+</span>
+                                </div>
+                                <div class="info">
+                                    <div class="rating">★★★★☆</div>
+                                    <div class="price" data-price="80">Rs.80/-</div>
+                                    <div class="title">Aloo Paratha</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="nav-btn next-btn">&gt;</button>
+                    </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items-list">
+            </ul>
+            <p>Total: Rs.<span id="cart-total">0</span>/-</p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
     </div>
 
-    <!-- Item 3 -->
-    <div class="item-card">
-      <div class="image-container">
-        <img src="./image/chicken momo.jpg" alt="Chicken Mo:mo">
-        <span class="add-icon">+</span>
-      </div>
-      <div class="info">
-        <div class="rating">★★★★★</div>
-        <div class="price">Rs.130/-</div>
-        <div class="title">Chicken Mo:mo</div>
-      </div>
-    </div>
+  
 
-    <!-- Item 4 -->
-    <div class="item-card">
-      <div class="image-container">
-        <img src="./image/chukani.jpg" alt="Chukauni">
-        <span class="add-icon">+</span>
-      </div>
-      <div class="info">
-        <div class="rating">★★★★☆</div>
-        <div class="price">Rs.100/-</div>
-        <div class="title">Chukauni</div>
-      </div>
-    </div>
-  </div>
+  
 
-<body>
+
 
     <div class="top-menu-selector">
         <h1 class="main-heading">Pick your favourite</h1>
-        <p class="subtitle">(WE will be open at 10AM-6PM.)</p>
+        <p class="subtitle">(We will be open at 10AM-6PM.)</p>
 
         <div class="category-buttons">
             
             <button class="category-btn green-btn" data-category="veg-snacks">Veg snacks</button>
-            <a href="./regular.html" button class="category-btn green-btn" data-category="non-veg-snacks">Non-veg snacks ></a></button>
-            <a href="./nonveg.html" button class="category-btn green-btn" data-category="regular-lunch">Regular Lunch > </a></button>
-            <a href="./desert.html" button class="category-btn green-btn" data-category="dessert">Dessert></a></button>
+            <a href="./regular.html" button class="category-btn green-btn" data-category="non-veg-snacks">Non-veg snacks </a></button>
+            <a href="./nonveg.html" button class="category-btn green-btn" data-category="regular-lunch">Regular Lunch  </a></button>
+            <a href="./desert.html" button class="category-btn green-btn" data-category="dessert">Dessert</a></button>
         </div>
       </div>
 
@@ -174,6 +266,8 @@
             </div>
         </div>
     </div>
+
+   
 
 
 

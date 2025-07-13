@@ -1,147 +1,148 @@
 
-/* Basic Reset & Body Styling */
+
 body {
-    font-family: 'Open Sans', sans-serif; /* Default readable font */
+    font-family: 'Open Sans', sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8; /* Light grey background for the overall page */
+    background-color: #f8f8f8; 
     color: #333;
     line-height: 1.6;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align content to the top */
+    align-items: flex-start; 
     min-height: 100vh;
 }
 
 .menu-section-container {
     width: 100%;
-    max-width: 1200px; /* Max width to contain the content */
-    text-align: center; /* Centers the main title */
-    padding-top: 50px; /* Space above the main title */
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 50px; 
 }
 
-/* Main Title Styling */
+
 .main-title {
-    font-family: 'Bebas Neue', sans-serif; /* Bold, condensed font */
-    font-size: 2.8em; /* Large size */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8em; 
     font-weight: 700;
     color: #000;
     margin-top: 0;
-    margin-bottom: 50px; /* Space below the title */
+    margin-bottom: 50px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-/* Daily Lunch Menu Area */
+
 .daily-lunch-menu-area {
     position: relative;
-    background-image: url('./image/istockphoto-981623450-170667a\ \(1\).jpg'); /* Your background image */
+    background-image: url('./image/istockphoto-981623450-170667a\ \(1\).jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 20px; /* Padding inside this section */
+    padding: 60px 20px; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center; 
     text-align: center;
-    /* This ensures a minimum height for the background image to be visible */
-    min-height: 500px; /* Adjust as needed */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+    min-height: 500px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional Overlay for Readability */
+
 .background-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white overlay for contrast */
-    z-index: 1; /* Ensure it's below text content */
+    background-color: rgba(255, 255, 255, 0.3); 
+    z-index: 1; 
 }
 
-/* Section Subtitle "Daily lunch items" */
+
 .section-subtitle {
-    font-family: 'Roboto', sans-serif; /* A clean font for subtitle */
+    font-family: 'Roboto', sans-serif;
     font-size: 1.7em;
     font-weight: 700;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.9); /* Opaque white background */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px 25px;
     border-radius: 5px;
     margin-bottom: 40px;
-    z-index: 2; /* Ensure title is above overlay */
-    position: relative; /* To enable z-index */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    z-index: 2;
+    position: relative; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
 }
 
-/* Meal List Wrapper */
+
 .meal-list-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Space between meal items */
+    gap: 12px; 
     width: 100%;
-    max-width: 800px; /* Max width for the list of items */
+    max-width: 800px; 
     margin: 0 auto;
-    z-index: 2; /* Ensure list is above overlay */
-    position: relative; /* To enable z-index */
+    z-index: 2; 
+    position: relative; 
 }
 
-/* Individual Meal Item Styling */
+
 .meal-item {
     display: flex;
-    align-items: stretch; /* Stretch items to fill height */
+    align-items: stretch;
     border-radius: 8px;
-    overflow: hidden; /* Ensures inner elements respect border-radius */
+    overflow: hidden; 
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .day-button {
-    background-color: #F89406; /* Orange color from image */
+    background-color: #F89406; 
     color: white;
     padding: 12px 18px;
     font-weight: 700;
     font-size: 1em;
     text-transform: uppercase;
-    flex-shrink: 0; /* Prevent from shrinking */
+    flex-shrink: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    min-width: 100px; /* Fixed width for consistent button size */
+    min-width: 100px; 
 }
 
 .meal-description {
-    background-color: #e0e0e0; /* Light grey for the description field */
+    background-color: #e0e0e0; 
     color: #333;
     padding: 12px 15px;
     font-size: 1em;
     text-align: left;
-    flex-grow: 1; /* Allow description to take available space */
+    flex-grow: 1; 
     display: flex;
-    align-items: center; /* Vertically center text */
+    align-items: center; 
 }
 
 .meal-price {
-    background-color: #8BC34A; /* Green color for price box */
+    background-color: #8BC34A; 
     color: #333;
     padding: 12px 15px;
     font-weight: 700;
     font-size: 1.1em;
     text-align: center;
-    flex-shrink: 0; /* Prevent from shrinking */
+    flex-shrink: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    min-width: 60px; /* Fixed width for consistent price box size */
+    min-width: 60px; 
 }
 
 
-/* Responsive Adjustments */
+
 @media (max-width: 850px) {
     .main-title {
         font-size: 2.2em;

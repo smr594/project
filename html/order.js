@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Optional: Add event listeners for analytics or other dynamic behavior
+    
     const continueChatBtn = document.querySelector('.continue-chat-btn');
     const downloadLink = document.querySelector('.download-link');
     const downloadButton = document.querySelector('.download-button');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (continueChatBtn) {
         continueChatBtn.addEventListener('click', () => {
             console.log('Continue to Chat button clicked!');
-            // You could add analytics tracking here, e.g., Google Analytics event
+            
         });
     }
 

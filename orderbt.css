@@ -13,7 +13,7 @@ body {
 }
 
 .form-container {
-    background-color: #fff; /* White background for the form area */
+    background-color:#94c255; /* White background for the form area */
     padding: 30px 40px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -108,13 +108,13 @@ body {
 }
 
 .form-group textarea {
-    resize: vertical; /* Allow vertical resizing */
-    min-height: 80px; /* Minimum height for textarea */
+    resize: vertical; 
+    min-height: 80px; 
 }
 
-/* Adjustments for specific inputs */
+
 #food-type {
-    appearance: none; /* Remove default dropdown arrow */
+    appearance: none; 
     -webkit-appearance: none;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.2-6.2H18.2c-4.8%200-9.3%201.8-13.2%206.2-3.9%204.4-6.2%2010-6.2%2016.3%200%206.3%202.3%2011.9%206.2%2016.3l118.8%20118.8c4%203.9%209.5%206.1%2015.6%206.1s11.6-2.2%2015.6-6.1L287%20102c3.9-4.4%206.2-10%206.2-16.3%200-6.3-2.3-11.9-6.2-16.3z%22%2F%3E%3C%2Fsvg%3E'); /* Custom dropdown arrow */
     background-repeat: no-repeat;
@@ -123,63 +123,49 @@ body {
 }
 
 #qty {
-    text-align: right; /* Align 'quantit' to the right */
+    text-align: right; 
 }
 
-/* Large input fields (Address, Note) spanning more columns on desktop */
+
 .form-grid-row .large-input {
-    grid-column: span 2; /* Span two columns */
-}
-
-/* Referral Code positioning, to be next to Note on desktop */
-.form-grid-row:nth-last-of-type(1) { /* The last grid row */
-    grid-template-columns: 2fr 1fr; /* Note takes 2 parts, Referral Code 1 part */
+    grid-column: span 2; 
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
-    .form-grid-row:first-of-type {
-        /* On medium screens, let them flow more naturally or stack */
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .form-grid-row .large-input {
-        grid-column: span 1; /* On smaller screens, they don't span more columns */
-    }
-    .form-grid-row:nth-last-of-type(1) {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Stack on smaller screens */
-    }
+.form-grid-row:nth-last-of-type(1) { 
+    grid-template-columns: 2fr 1fr; 
+    flex-direction: row; 
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); 
+}
+
+.button[type="submit"] {
+    background-color: #4CAF50; 
+    background-color: #2196F3; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1976D2;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 
-@media (max-width: 600px) {
-    .form-container {
-        padding: 20px; /* Reduce padding on small screens */
-    }
 
-    .intro-message .underline {
-        width: 100%; /* Make underline full width */
-        max-width: 300px; /* Or a fixed max-width for smaller screens */
-    }
-
-    .form-grid-row {
-        grid-template-columns: 1fr; /* Stack all form groups vertically */
-        gap: 20px;
-        margin-bottom: 20px;
-    }
-
-    /* Ensure specific row adjustments are overridden for single column */
-    .form-grid-row:first-of-type {
-        grid-template-columns: 1fr;
-    }
-    .form-grid-row .large-input {
-        grid-column: auto;
-    }
-    .form-grid-row:nth-last-of-type(1) {
-        grid-template-columns: 1fr;
-    }
-
-    .email-input-wrapper input[type="email"] {
-        width: calc(100% - 30px); /* Adjust width to be more fluid */
-    }
-}
